@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:hint="@string/name_"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="#005b4f"
+            android:layout_marginRight="8dp"
+            android:textSize="20sp"
+            android:inputType="textCapWords"/>
+
+<TextView
+    style="@style/codefont"
+    android:text="@string/topping"
+    android:textStyle="bold|italic"
+    android:layout_marginLeft="8dp"
+   />
+    <CheckBox
+        android:id="@+id/whippedCream"
+        style="@style/codefont"
+        android:text="@string/Whipped"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="italic"
+        android:textSize="20sp"/>
+        <CheckBox
+            android:id="@+id/chocolate"
+            style="@style/codefont"
+            android:text="chocolate($20 per cup)"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="italic"
+            android:textSize="20sp"/>
+    <TextView
+        style="@style/codefont"
+        android:text="quantity"
+        />
+    <LinearLayout
+        style="@style/codefont"
+        android:padding="8dp">
+    <Button
+        style="@style/codefont"
+        android:onClick="increment"
+        android:text="+"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        style="@style/codefont"
+        android:text="0"
+        />
+    <Button
+        style="@style/codefont"
+        android:onClick="decrement"
+        android:text="-"
+       />
+    </LinearLayout>
+    <TextView
+
+        style="@style/codefont"
+        android:text="Oder Summary"
+        />
+
+<TextView
+    android:id="@+id/price_text_view"
+    style="@style/codefont"
+    android:text="$0"
+    android:textStyle="italic"/>
+
+    <Button
+        style="@style/codefont"
+        android:onClick="submitOrder"
+        android:text="order"
+        android:textSize="30sp"/>
+
+</LinearLayout>
+</ScrollView>

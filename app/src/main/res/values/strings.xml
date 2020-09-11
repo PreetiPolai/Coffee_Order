@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="name_">Name</string>
+    <string name="topping" >TOPPING</string>
+    <string name="Whipped">"Whipped Cream ($10 per plate) "</string>
+
+
+</resources>
